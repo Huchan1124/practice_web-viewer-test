@@ -21,13 +21,11 @@
     <div class="container-fluid ">
         <div class="row ">
             <div class="col-12 ">
-                <model-viewer src="./assets/mammoth/source/mammoth.glb" ar ar-modes="scene-viewer quick-look  webxr" camera-controls shadow-intensity="1">
-                    <div class=" progress-bar" slot="progress-bar">
+                <model-viewer src="./assets/mammoth/source/mammoth.glb" environment-image="neutral" ar ar-modes="scene-viewer quick-look  webxr" camera-controls shadow-intensity="1">
+                    <div class=" progress-bar">
                         <div class="update-bar"></div>
                     </div>
-                    <!-- <button slot="ar-button">
-                        按鈕
-                    </button> -->
+                    <button slot="hotspot" data-position="0 0 0" data-normal="5 5 5" data-visibility-attribute="visible" class="btn btn-primary">hotspot</button>
                 </model-viewer>
             </div>
         </div>
